@@ -1,0 +1,386 @@
+
+/* Google Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5f8fc;
+    color: #26344a;
+    line-height: 1.7;
+}
+
+/* Navigation */
+header {
+    background: #10243e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    max-width: 1200px;
+    margin: auto;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 700;
+    color: white;
+}
+
+.logo span {
+    color: #32c5b5;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #32c5b5;
+}
+
+/* Hero */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #10243e, #174b70);
+    color: white;
+}
+
+.hero-content {
+    max-width: 850px;
+}
+
+.welcome {
+    color: #32c5b5;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 12px;
+}
+
+.hero h1 span {
+    color: #32c5b5;
+}
+
+.hero h2 {
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #dbe8f5;
+}
+
+/* Buttons */
+.hero-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #32c5b5;
+    color: #10243e;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    transform: translateY(-3px);
+}
+
+.btn-outline {
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+}
+
+/* Common Sections */
+.section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 75px 25px;
+}
+
+.section-title {
+    text-align: center;
+    color: #10243e;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: #32c5b5;
+    margin: 12px auto;
+    border-radius: 5px;
+}
+
+/* About */
+.about-content {
+    max-width: 850px;
+    margin: auto;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.06);
+    text-align: justify;
+}
+
+/* Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+}
+
+.skill-card {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #174b70;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    background: #10243e;
+    color: white;
+    transform: translateY(-5px);
+}
+
+/* Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.project-card {
+    background: white;
+    padding: 28px;
+    border-radius: 12px;
+    border-left: 5px solid #32c5b5;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #10243e;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.project-card p {
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.project-card span {
+    display: inline-block;
+    color: #138b83;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Experience */
+.experience-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.experience-card {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    border-left: 4px solid #32c5b5;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.experience-card h3 {
+    color: #10243e;
+    margin-bottom: 8px;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    background: #eaf1f8;
+    max-width: 100%;
+}
+
+.contact-links {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    padding: 12px 25px;
+    background: #10243e;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background: #32c5b5;
+    color: #10243e;
+}
+
+/* Footer */
+footer {
+    background: #10243e;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+
+    .about-content {
+        text-align: left;
+    }
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Reveal Animation */
+.reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Back to Top */
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: #32c5b5;
+    color: #10243e;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    z-index: 999;
+}
+
+.back-to-top.show {
+    display: block;
+}
